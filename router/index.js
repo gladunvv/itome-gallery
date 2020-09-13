@@ -1,7 +1,10 @@
 const { Router } = require('express');
-const IndexController = require('../controllers/index.controllers');
+const mainController = require('../controllers/main');
+const galleryController = require('../controllers/gallery');
+
 const router = Router();
 
-router.get('', IndexController.index);
+router.get('/', mainController.getListGallery);
+router.get('/:galleryName', galleryController.getImageGallery);
 
 module.exports = router;

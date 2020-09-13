@@ -1,0 +1,21 @@
+.container {
+  width: 85%;
+  max-width: 65em;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blocks-wrapper {
+  width: inherit;
+}
+
+.button-block {
+  margin-top: 50px;
+}
