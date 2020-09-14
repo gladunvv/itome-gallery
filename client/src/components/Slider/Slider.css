@@ -1,0 +1,10 @@
+.default-slide {
+  color: #f8e4e4;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

@@ -1,23 +1,33 @@
 import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
 
+import { BASE_URL } from '../../constants';
+
+import 'react-awesome-slider/dist/styles.css';
 import './Slider.css';
 
-export const Slider = ({ imagesList }) => {
+export const Slider = ({ imagesData }) => {
   return (
     <AwesomeSlider>
-      {imagesList ? (
-        imagesList.images.map((image, index) => (
+      {imagesData ? (
+        imagesData.images.map((image, index) => (
           <div
             key={index}
-            data-src={`http://localhost:5000/${imagesList.gallery}/${image}`}
+            data-src={`${BASE_URL}/${imagesData.gallery}/${image}`}
           />
         ))
       ) : (
         <>
           <div className='default-slide'>
+            <p>Тестовое задание</p>
             <h1>Галлерея изображений</h1>
+            <span className='caption'>
+              Сделанно с{' '}
+              <span role='img' aria-label='heart'>
+                ❤️
+              </span>{' '}
+              для #айтуми
+            </span>
           </div>
         </>
       )}

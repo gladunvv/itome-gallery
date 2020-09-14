@@ -1,15 +1,17 @@
 .container {
   width: 85%;
-  max-width: 65em;
   height: 100vh;
+  max-width: 65em;
+
   margin: 0 auto;
 }
 
 .split {
   display: flex;
-  gap: 1em;
   flex-wrap: wrap;
   justify-content: center;
+
+  gap: 1em;
 }
 
 .blocks-wrapper {
